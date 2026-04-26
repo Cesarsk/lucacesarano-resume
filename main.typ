@@ -115,7 +115,9 @@ B2B clients across CH, EU, and APAC.
 - Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams (also used as AI knowledge base), redesigned PagerDuty / Slack / incident-communication standards, and shipped AI-driven transparency reports — invited to present the turnaround as a company-wide success story and workshop.
 - Authored Sygnum's first SLO/SLA + alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); 3 services LIVE, 10+ in pipeline.
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
-- Lead engineers across Zürich and Singapore; closed 5 hires across SRE, DevEx, and partner teams; ad interim Manager for the DevEx Team since Oct 2025; managed the SRE Security Specialist's transition into the new Cloud Security team.
+- Lead engineers across Zürich and Singapore; closed 5 hires across SRE, DevEx, and partner teams.
+- Ad interim Manager for the DevEx Team since Oct 2025.
+- Held the SRE Security domain ad interim during its transition into the new Cloud Security team.
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
 
 #v(0.2em)
@@ -151,12 +153,12 @@ B2B clients across CH, EU, and APAC.
 #v(0.2em)
 
 #block(breakable: false)[
-  #role("Freelance System Engineer (during studies)", "NOV 2017 – FEB 2021")
+  #role("Freelance System Engineer", "NOV 2017 – FEB 2021")
   #company("Drone Inspection Service", "Naples, Italy")
 
-  - Built and ran the company's full on-premise stack: office networking, workstation and server provisioning, OS installs, directory services, databases, and remote/on-site connectivity.
-  - Advised on infrastructure decisions and hardware procurement; sole technical contact for IT during the company's early-stage growth.
-  - First exposure to running infrastructure as a single owner — foundation for later platform and SRE work.
+  - Sole technical contact for IT during the company's early-stage growth.
+  - Built and ran the full on-premise stack: networking, servers and workstations, OS, directory services, databases, and remote/on-site connectivity.
+  - Advised on infrastructure decisions and hardware procurement; foundation for later platform and SRE work.
 ]
 
 // =============================================================
