@@ -197,7 +197,7 @@ B2B clients across CH, EU, and APAC.
 #section[Projects, Publications & Writing]
 
 - *argocd-helm-lookup* (#link("https://github.com/cesarsk/argocd-helm-lookup")[github.com/cesarsk/argocd-helm-lookup]) — open-source CMP plugin enabling Helm `lookup()` under Argo CD; Medium write-up (Mar 2026).
-- *IEEE Access* — saving-based heuristic search algorithm (peer-reviewed, 2021).
+- #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — first author, IEEE Access 2021 (peer-reviewed; #underline[20 citations]).
 - Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] — AWS, Terraform, ArgoCD topics (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
