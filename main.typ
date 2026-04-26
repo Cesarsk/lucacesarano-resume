@@ -155,7 +155,7 @@ B2B clients across CH, EU, and APAC.
 
   - Sole technical contact for IT during the company's early-stage growth.
   - Built and ran the full on-premise stack: networking, servers and workstations, OS, directory services, databases, and remote/on-site connectivity.
-  - Advised on infrastructure decisions and hardware procurement; foundation for later platform and SRE work.
+  - Advised on infrastructure decisions and hardware procurement.
 ]
 
 // =============================================================
