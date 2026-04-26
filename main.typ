@@ -187,8 +187,8 @@ Internet of Vehicles Systems; published in IEEE Access.
   columns: (1fr, auto),
   align: (left, right),
   row-gutter: 0.4em,
-  [AWS Solutions Architect — Professional #text(style: "italic")[(scheduled to renew)]], [FEB 2022],
-  [AWS Solutions Architect — Associate #text(style: "italic")[(scheduled to renew)]], [NOV 2021],
+  [AWS Solutions Architect — Professional #text(style: "italic")[(to renew)]], [FEB 2022],
+  [AWS Solutions Architect — Associate #text(style: "italic")[(to renew)]], [NOV 2021],
 )
 
 // =============================================================
@@ -199,6 +199,6 @@ Internet of Vehicles Systems; published in IEEE Access.
 
 - *argocd-helm-lookup* (#link("https://github.com/cesarsk/argocd-helm-lookup")[github.com/cesarsk/argocd-helm-lookup]) — open-source CMP plugin enabling Helm `lookup()` under Argo CD; Medium write-up (Mar 2026).
 - #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — #underline[first author], IEEE Access 2021 (peer-reviewed; #underline[20 citations]).
-- Tech writing on Medium, including articles featured in #underline[#link("https://betterprogramming.pub/")[Better Programming]] — AWS, Terraform, ArgoCD topics (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
+- Tech writing on Medium, including articles featured in #underline[#link("https://betterprogramming.pub/")[Better Programming]] (#link("https://betterprogramming.pub/")[betterprogramming.pub]) — AWS, Terraform, ArgoCD topics (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
