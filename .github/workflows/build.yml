@@ -44,14 +44,6 @@ jobs:
       - name: Compile main.typ
         run: typst compile main.typ
 
-      - name: Upload PDF as workflow artifact
-        uses: actions/upload-artifact@v5
-        with:
-          name: lucacesarano-resume
-          path: main.pdf
-          retention-days: 90
-          if-no-files-found: error
-
       - name: Stage Pages content (PDF + index redirect)
         run: |
           mkdir -p _site
