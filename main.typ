@@ -1,0 +1,204 @@
+// =============================================================
+// Luca Cesarano — Resume
+// Compile: typst compile main.typ
+// Watch:   typst watch main.typ
+// =============================================================
+
+#set document(title: "Luca Cesarano — Resume", author: "Luca Cesarano")
+
+#set page(
+  paper: "a4",
+  margin: (x: 1.2cm, y: 0.8cm),
+)
+
+#set text(
+  font: ("Helvetica Neue", "Helvetica", "Arial"),
+  size: 9.5pt,
+  hyphenate: false,
+)
+
+#set par(leading: 0.45em, justify: false)
+
+// -------- Section header band (bordered, bold, uppercase) -----
+#let section(name) = block(
+  width: 100%,
+  inset: (x: 6pt, y: 3.5pt),
+  stroke: 0.7pt + black,
+  above: 11pt,
+  below: 6pt,
+  text(weight: "bold", size: 10pt, upper(name)),
+)
+
+// -------- Two-column row: left bold, right right-aligned -------
+#let role(title, date) = block(above: 6pt, below: 2pt, grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  text(weight: "bold", size: 10pt, upper(title)),
+  text(weight: "bold", size: 10pt, date),
+))
+
+#let company(name, location) = block(above: 2pt, below: 3pt, grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  text(style: "italic", name),
+  text(style: "italic", location),
+))
+
+// -------- Bullets with tighter spacing --------
+#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.4em, marker: ([▪], [○]))
+
+// =============================================================
+// HEADER
+// =============================================================
+
+#align(center)[
+  #text(weight: "bold", size: 18pt, "LUCA CESARANO")
+  #v(-0.2em)
+  #text(size: 9.5pt)[
+    #link("mailto:luca.cesarano1@gmail.com")[luca.cesarano1\@gmail.com] |
+    #link("https://www.lucacesarano.com")[lucacesarano.com] |
+    #link("https://github.com/cesarsk")[github.com/cesarsk] |
+    #link("https://linkedin.com/in/luca-cesarano1")[linkedin.com/in/luca-cesarano1]
+  ]
+]
+
+#v(0.2em)
+
+// =============================================================
+// SUMMARY
+// =============================================================
+
+#section[Summary]
+
+Head of Platform, Site Reliability Engineering at Sygnum, the FINMA-regulated
+digital-asset bank (\$1B+ valuation, \~300 employees). 8+ years across SRE,
+cloud, and on-premise infrastructure. Lead the company-wide SRE function across
+Zürich and Singapore, running the AWS estate that powers Sygnum's trading,
+custody, tokenization, banking, and onboarding workloads for institutional and
+B2B clients across CH, EU, and APAC.
+
+// =============================================================
+// SKILLS
+// =============================================================
+
+#section[Skills]
+
+#grid(
+  columns: (auto, 1fr),
+  column-gutter: 1em,
+  row-gutter: 0.45em,
+  text(weight: "bold", "CLOUD & PLATFORM"),
+  [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka],
+
+  text(weight: "bold", "INFRA AS CODE"),
+  [Terraform (Atlantis), GitLab CI, Docker],
+
+  text(weight: "bold", "OBSERVABILITY"),
+  [Datadog, PagerDuty, Snyk, ELK, Prometheus / Grafana, OpenTelemetry],
+
+  text(weight: "bold", "PROGRAMMING"),
+  [Python, Bash],
+
+  text(weight: "bold", "LANGUAGES"),
+  [Italian (native), English (fluent), German (B1)],
+)
+
+// =============================================================
+// WORK EXPERIENCE
+// =============================================================
+
+#section[Work Experience]
+
+#role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
+#company("Sygnum Bank AG", "Zürich, Switzerland")
+
+- Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams (also used as AI knowledge base), redesigned PagerDuty / Slack / incident-communication standards, and shipped AI-driven transparency reports — invited to present the turnaround as a company-wide success story and workshop.
+- Authored Sygnum's first SLO/SLA + alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); 3 services LIVE, 10+ in pipeline.
+- External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
+- Lead engineers across Zürich and Singapore; closed 5 hires across SRE, DevEx, and partner teams; ad interim Manager for the DevEx Team since Oct 2025; managed the SRE Security Specialist's transition into the new Cloud Security team.
+- Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
+
+#v(0.2em)
+
+#role("Tech Lead, Site Reliability Engineering", "JAN 2024 – JAN 2025")
+#company("Sygnum Bank AG", "Zürich, Switzerland")
+
+- Led Sygnum's AWS Landing Zone redesign in partnership with AWS ProServe (on-site engagement at AWS offices): designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
+- Delivered FINMA / ISAE automated compliance checks and the AWS Incident Response playbook; restructured Sygnum Organisation Units into a hardened Restricted OU.
+- Designed Datadog architecture from zero to org standard; achieved #underline[7/7 Golden Signals coverage] on PagerDuty Prod, Infra, UAT.
+- Led delivery of EKS Updater (eliminated weeks of manual cluster-upgrade toil twice a year) and ArgoCD-managed application updates across all domains.
+- Drove Kong Gateway adoption as the standard Sygnum API gateway.
+
+#v(0.2em)
+
+#role("Senior Associate, Site Reliability Engineering", "AUG 2022 – JAN 2024")
+#company("Sygnum Bank AG", "Zürich, Switzerland")
+
+- Contributed to the AWS Landing Zone foundation as an individual contributor: infrastructure code, account-separation patterns, and EKS rollout.
+- Designed the OpenSearch RBAC model and reworked access patterns across multiple Sygnum services to align with least-privilege standards.
+- Built and maintained containerised microservices on EKS; advanced GitLab CI pipelines and incident-management practices.
+
+#v(0.2em)
+
+#role("Site Reliability Engineer · Reply Group (Storm Reply)", "FEB 2021 – JUL 2022")
+#company("Full-time consultant at Generali Investments", "Turin, Italy")
+
+- Reliability owner of Generali Investments' AWS Cloud Data Platform; refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
+- Built ELK monitoring/logging platform with quality dashboards.
+- Coordinated team building Generali Investments' AWS Landing Zone.
+- AWS Cloud Migration for Banca Agricola Popolare di Ragusa (CloudEndure, EC2, RDS, IAM, Workspaces).
+
+#v(0.2em)
+
+#block(breakable: false)[
+  #role("Freelance System Engineer (during studies)", "NOV 2017 – FEB 2021")
+  #company("Drone Inspection Service", "Naples, Italy")
+
+  - Built and ran the company's full on-premise stack: office networking, workstation and server provisioning, OS installs, directory services, databases, and remote/on-site connectivity.
+  - Advised on infrastructure decisions and hardware procurement; sole technical contact for IT during the company's early-stage growth.
+  - First exposure to running infrastructure as a single owner — foundation for later platform and SRE work.
+]
+
+// =============================================================
+// EDUCATION
+// =============================================================
+
+#block(breakable: false)[
+  #section[Education]
+
+  #role("Master of Computer Engineering", "SEP 2018 – MAR 2021")
+  #company("Alma Mater Studiorum University of Bologna", "Bologna, Italy")
+
+  - Research project at UOC Barcelona (2020-2021): heuristic search algorithm for Smart City scenarios; published in IEEE Access.
+
+  #v(0.2em)
+
+  #role("Bachelor of Computer Engineering", "OCT 2012 – JUL 2018")
+  #company("Federico II University of Naples", "Naples, Italy")
+]
+
+// =============================================================
+// CERTIFICATIONS
+// =============================================================
+
+#section[Certifications]
+
+#grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  row-gutter: 0.4em,
+  [AWS Solutions Architect — Professional #text(style: "italic")[(renewal pending)]], [FEB 2022],
+  [AWS Solutions Architect — Associate #text(style: "italic")[(renewal pending)]], [NOV 2021],
+)
+
+// =============================================================
+// PROJECTS, PUBLICATIONS & WRITING
+// =============================================================
+
+#section[Projects, Publications & Writing]
+
+- *argocd-helm-lookup* (#link("https://github.com/cesarsk/argocd-helm-lookup")[github.com/cesarsk/argocd-helm-lookup]) — open-source CMP plugin enabling Helm `lookup()` under Argo CD; Medium write-up (Mar 2026).
+- *IEEE Access* — saving-based heuristic search algorithm (peer-reviewed, 2021).
+- Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] — AWS, Terraform, ArgoCD topics (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
+- Open-source Android language app — #underline[30,000 downloads, 4.9/5] (320 reviews).
+- Occasional advisory work for early-stage startups on cloud architecture and platform setup.
