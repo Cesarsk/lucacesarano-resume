@@ -109,24 +109,24 @@ B2B clients across CH, EU, and APAC.
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-- Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams (also used as AI knowledge base), redesigned PagerDuty / Slack / incident-communication standards, and shipped AI-driven transparency reports — invited to present the turnaround as a company-wide success story and workshop.
-- Authored Sygnum's first SLO/SLA + alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); 3 services LIVE, 10+ in pipeline.
+- Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams (also used as AI knowledge base), redesigned PagerDuty / Slack / incident-communication standards, and shipped AI-driven transparency reports — #underline[invited to present the turnaround as a company-wide success story and workshop].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
-- Lead engineers across Zürich and Singapore; closed 5 hires across SRE, DevEx, and partner teams.
+- Authored Sygnum's first SLO/SLA + alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
+- Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
+- Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx, and partner teams.
 - Ad interim Manager for the DevEx Team since Oct 2025.
 - Held the SRE Security domain ad interim during its transition into the new Cloud Security team.
-- Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
 
 #v(0.2em)
 
 #role("Tech Lead, Site Reliability Engineering", "JAN 2024 – JAN 2025")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-- Led Sygnum's AWS Landing Zone redesign in partnership with AWS ProServe (on-site engagement at AWS offices): designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
-- Delivered FINMA / ISAE automated compliance checks and the AWS Incident Response playbook; restructured Sygnum Organisation Units into a hardened Restricted OU.
+- Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
+- Delivered #underline[FINMA / ISAE automated compliance checks] and the AWS Incident Response playbook; restructured Sygnum Organisation Units into a hardened Restricted OU.
 - Designed Datadog architecture from zero to org standard; achieved #underline[7/7 Golden Signals coverage] on PagerDuty Prod, Infra, UAT.
-- Led delivery of EKS Updater (eliminated weeks of manual cluster-upgrade toil twice a year) and ArgoCD-managed application updates across all domains.
 - Drove Kong Gateway adoption as the standard Sygnum API gateway.
+- Led delivery of EKS Updater (eliminated weeks of manual cluster-upgrade toil twice a year) and ArgoCD-managed application updates across all domains.
 
 #v(0.2em)
 
@@ -143,9 +143,9 @@ B2B clients across CH, EU, and APAC.
 #company("Full-time consultant at Generali Investments", "Turin, Italy")
 
 - Reliability owner of Generali Investments' AWS Cloud Data Platform; refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
-- Built ELK monitoring/logging platform with quality dashboards.
 - Coordinated team building Generali Investments' AWS Landing Zone.
 - AWS Cloud Migration for Banca Agricola Popolare di Ragusa (CloudEndure, EC2, RDS, IAM, Workspaces).
+- Built ELK monitoring/logging platform with quality dashboards.
 
 #v(0.2em)
 
@@ -197,7 +197,7 @@ B2B clients across CH, EU, and APAC.
 #section[Projects, Publications & Writing]
 
 - *argocd-helm-lookup* (#link("https://github.com/cesarsk/argocd-helm-lookup")[github.com/cesarsk/argocd-helm-lookup]) — open-source CMP plugin enabling Helm `lookup()` under Argo CD; Medium write-up (Mar 2026).
-- #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — first author, IEEE Access 2021 (peer-reviewed; #underline[20 citations]).
-- Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] — AWS, Terraform, ArgoCD topics (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
+- #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — #underline[first author], IEEE Access 2021 (peer-reviewed; #underline[20 citations]).
+- Tech writing on Medium, including articles featured in #underline[#link("https://betterprogramming.pub/")[Better Programming]] — AWS, Terraform, ArgoCD topics (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
