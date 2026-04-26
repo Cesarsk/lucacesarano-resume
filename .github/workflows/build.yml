@@ -46,6 +46,30 @@ jobs:
           retention-days: 90
           if-no-files-found: error
 
+      - name: Stage Pages content (PDF + index redirect)
+        run: |
+          mkdir -p _site
+          cp main.pdf _site/main.pdf
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <title>Luca Cesarano — CV</title>
+              <meta http-equiv="refresh" content="0; url=main.pdf">
+              <link rel="canonical" href="https://cesarsk.github.io/lucacesarano-resume/main.pdf">
+            </head>
+            <body>
+              <p>Redirecting to <a href="main.pdf">main.pdf</a>…</p>
+            </body>
+          </html>
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
       - name: Publish PDF as the 'latest' release
         uses: softprops/action-gh-release@v2
         with:
@@ -54,6 +78,23 @@ jobs:
           body: |
             Latest compiled CV PDF. Updated automatically on every push to `main`.
 
-            **Stable URL:** https://github.com/Cesarsk/lucacesarano-resume/releases/latest/download/main.pdf
+            **Inline view (browser-renders PDF):** https://cesarsk.github.io/lucacesarano-resume/main.pdf
+            **Force-download URL:** https://github.com/Cesarsk/lucacesarano-resume/releases/latest/download/main.pdf
           files: main.pdf
           make_latest: true
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
