@@ -88,16 +88,13 @@ B2B clients across CH, EU, and APAC.
   column-gutter: 1em,
   row-gutter: 0.45em,
   text(weight: "bold", "CLOUD & PLATFORM"),
-  [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka],
-
-  text(weight: "bold", "INFRA AS CODE"),
-  [Terraform (Atlantis), GitLab CI, Docker],
+  [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka, GitLab CI, Docker],
 
   text(weight: "bold", "OBSERVABILITY"),
-  [Datadog, PagerDuty, Snyk, ELK, Prometheus / Grafana, OpenTelemetry],
+  [Datadog, PagerDuty, Snyk, ELK],
 
   text(weight: "bold", "PROGRAMMING"),
-  [Python, Bash],
+  [Python, Bash, Terraform (Atlantis)],
 
   text(weight: "bold", "LANGUAGES"),
   [Italian (native), English (fluent), German (B1)],
@@ -189,8 +186,8 @@ B2B clients across CH, EU, and APAC.
   columns: (1fr, auto),
   align: (left, right),
   row-gutter: 0.4em,
-  [AWS Solutions Architect — Professional #text(style: "italic")[(renewal pending)]], [FEB 2022],
-  [AWS Solutions Architect — Associate #text(style: "italic")[(renewal pending)]], [NOV 2021],
+  [AWS Solutions Architect — Professional #text(style: "italic")[(scheduled to renew)]], [FEB 2022],
+  [AWS Solutions Architect — Associate #text(style: "italic")[(scheduled to renew)]], [NOV 2021],
 )
 
 // =============================================================
