@@ -27,6 +27,8 @@ jobs:
     name: Build PDF (main)
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
 
@@ -36,10 +38,22 @@ jobs:
       - name: Compile main.typ
         run: typst compile main.typ
 
-      - name: Upload PDF artifact
+      - name: Upload PDF as workflow artifact
         uses: actions/upload-artifact@v5
         with:
           name: lucacesarano-resume
           path: main.pdf
           retention-days: 90
           if-no-files-found: error
+
+      - name: Publish PDF as the 'latest' release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest CV
+          body: |
+            Latest compiled CV PDF. Updated automatically on every push to `main`.
+
+            **Stable URL:** https://github.com/Cesarsk/lucacesarano-resume/releases/latest/download/main.pdf
+          files: main.pdf
+          make_latest: true
