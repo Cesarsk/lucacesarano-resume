@@ -8,6 +8,7 @@ on:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  PDF_NAME: LucaCesaranoResume.pdf
 
 jobs:
   validate:
@@ -24,7 +25,7 @@ jobs:
         uses: typst-community/setup-typst@v4
 
       - name: Validate that main.typ compiles
-        run: typst compile main.typ
+        run: typst compile main.typ "$PDF_NAME"
 
   build:
     name: Build PDF (main)
@@ -42,23 +43,23 @@ jobs:
         uses: typst-community/setup-typst@v4
 
       - name: Compile main.typ
-        run: typst compile main.typ
+        run: typst compile main.typ "$PDF_NAME"
 
       - name: Stage Pages content (PDF + index redirect)
         run: |
           mkdir -p _site
-          cp main.pdf _site/main.pdf
-          cat > _site/index.html <<'EOF'
+          cp "$PDF_NAME" "_site/$PDF_NAME"
+          cat > _site/index.html <<EOF
           <!doctype html>
           <html lang="en">
             <head>
               <meta charset="utf-8">
               <title>Luca Cesarano — CV</title>
-              <meta http-equiv="refresh" content="0; url=main.pdf">
-              <link rel="canonical" href="https://cesarsk.github.io/lucacesarano-resume/main.pdf">
+              <meta http-equiv="refresh" content="0; url=$PDF_NAME">
+              <link rel="canonical" href="https://cesarsk.github.io/lucacesarano-resume/$PDF_NAME">
             </head>
             <body>
-              <p>Redirecting to <a href="main.pdf">main.pdf</a>…</p>
+              <p>Redirecting to <a href="$PDF_NAME">$PDF_NAME</a>…</p>
             </body>
           </html>
           EOF
@@ -76,9 +77,9 @@ jobs:
           body: |
             Latest compiled CV PDF. Updated automatically on every push to `main`.
 
-            **Inline view (browser-renders PDF):** https://cesarsk.github.io/lucacesarano-resume/main.pdf
-            **Force-download URL:** https://github.com/Cesarsk/lucacesarano-resume/releases/latest/download/main.pdf
-          files: main.pdf
+            **Inline view (browser-renders PDF):** https://cesarsk.github.io/lucacesarano-resume/${{ env.PDF_NAME }}
+            **Force-download URL:** https://github.com/Cesarsk/lucacesarano-resume/releases/latest/download/${{ env.PDF_NAME }}
+          files: ${{ env.PDF_NAME }}
           make_latest: true
 
   deploy-pages:

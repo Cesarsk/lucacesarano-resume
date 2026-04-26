@@ -139,8 +139,8 @@ B2B clients across CH, EU, and APAC.
 
 #v(0.2em)
 
-#role("Site Reliability Engineer · Reply Group (Storm Reply)", "FEB 2021 – JUL 2022")
-#company("Full-time consultant at Generali Investments", "Turin, Italy")
+#role("Site Reliability Engineer", "FEB 2021 – JUL 2022")
+#company("Reply Group (Storm Reply) · Full-time consultant at Generali Investments", "Turin, Italy")
 
 - Refactored pipelines and Terraform infrastructure on Generali Investments' AWS Cloud Data Platform (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
 - Part of the team building Generali Investments' AWS Landing Zone.
