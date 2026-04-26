@@ -12,7 +12,7 @@
 )
 
 #set text(
-  font: ("Helvetica Neue", "Helvetica", "Arial"),
+  font: ("Helvetica Neue", "Helvetica", "Arial", "Liberation Sans"),
   size: 9.5pt,
   hyphenate: false,
 )
@@ -168,7 +168,8 @@ B2B clients across CH, EU, and APAC.
   #role("Master of Computer Engineering", "SEP 2018 – MAR 2021")
   #company("Alma Mater Studiorum University of Bologna", "Bologna, Italy")
 
-  - Research project at UOC Barcelona (2020-2021): heuristic search algorithm for Smart City scenarios; published in IEEE Access.
+  - Research project at UOC Barcelona (2020-2021): A Real-Time Energy-Saving Mechanism in
+Internet of Vehicles Systems; published in IEEE Access.
 
   #v(0.2em)
 

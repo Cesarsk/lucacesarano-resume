@@ -2,7 +2,15 @@
 
 Source for [Luca Cesarano](https://lucacesarano.com)'s CV. Built with [Typst](https://typst.app).
 
-Download the latest PDF from the [Actions tab](https://github.com/Cesarsk/lucacesarano-resume/actions) — workflow artifact `lucacesarano-resume`.
+## Public URLs
+
+| URL | Behavior |
+|---|---|
+| <https://cesarsk.github.io/lucacesarano-resume/main.pdf> | Renders the PDF inline in the browser |
+| <https://cesarsk.github.io/lucacesarano-resume/> | Auto-redirects to the inline PDF above |
+| <https://github.com/Cesarsk/lucacesarano-resume/releases/latest/download/main.pdf> | Forces a file download |
+
+The CV is auto-rebuilt and re-published on every push to `main` via [GitHub Actions](.github/workflows/build.yml).
 
 ## Build locally
 
