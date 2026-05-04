@@ -112,6 +112,7 @@ B2B clients across CH, EU, and APAC.
 - Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams (also used as AI knowledge base), redesigned PagerDuty / Slack / incident-communication standards, and shipped AI-driven transparency reports — #underline[invited to present the turnaround as a company-wide success story and workshop].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
+- Hardened observability and platform-tooling access: rolled out Datadog RBAC + Index Management and automated GitLab token lifecycle to align with company audit standards.
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security Team.
 - Ad interim Manager for the DevEx Team since Oct 2025 and for our SRE Security Specialist
@@ -122,7 +123,7 @@ B2B clients across CH, EU, and APAC.
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
 - Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
-- Automated FINMA / ISAE audit controls to reduce manual overhead during regulatory audits.
+- Automated FINMA / ISAE audit controls to reduce manual overhead during regulatory audits; restructured Sygnum's AWS Organisation into a hardened Restricted OU isolating sensitive accounts (Authorisation, Management, SMTP, Restricted).
 - Designed Datadog architecture from zero to org standard; #underline[onboarded all our services].
 - Drove Kong Gateway adoption as the standard Sygnum API gateway.
 - Led delivery of EKS Updater (eliminated weeks of manual cluster-upgrade toil twice a year) and ArgoCD-managed application updates across all domains.
@@ -133,7 +134,7 @@ B2B clients across CH, EU, and APAC.
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
 - Contributed to the AWS Landing Zone foundation as an individual contributor: infrastructure code, account-separation patterns, and EKS rollout.
-- Designed the OpenSearch RBAC model and reworked access patterns across multiple Sygnum services to align with least-privilege standards.
+- Designed access-control across Sygnum's stack: OpenSearch RBAC, Kubernetes RBAC, AWS Secrets Manager policies, and AWS IAM Identity Center (SSO) — aligned to least-privilege and audit-ready company standards.
 - Built and maintained containerised microservices on EKS; advanced GitLab CI pipelines.
 
 #v(0.6em)
