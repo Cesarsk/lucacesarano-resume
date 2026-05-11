@@ -112,7 +112,7 @@ B2B clients across CH, EU, and APAC.
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~50% engineering / \~50% management.]
+#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~70% management / \~30% engineering.]
 
 - Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams, redesigned PagerDuty / Slack / incident-communication standards — #underline[invited to present the turnaround as a company-wide success story and workshop].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
