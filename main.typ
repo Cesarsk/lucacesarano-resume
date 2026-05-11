@@ -94,7 +94,7 @@ B2B clients across CH, EU, and APAC.
   [Datadog, PagerDuty, Snyk, ELK],
 
   text(weight: "bold", "AI / AGENTIC"),
-  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Anthropic API, local LLMs (Ollama, llama.cpp), prompt engineering],
+  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, local LLMs (Ollama, llama.cpp)],
 
   text(weight: "bold", "PROGRAMMING"),
   [Python, Bash, Terraform (Atlantis)],
@@ -112,11 +112,13 @@ B2B clients across CH, EU, and APAC.
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
+#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~50% engineering / \~50% management.]
+
 - Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams, redesigned PagerDuty / Slack / incident-communication standards — #underline[invited to present the turnaround as a company-wide success story and workshop].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
 - Hardened observability and platform-tooling access: rolled out Datadog RBAC + Index Management and automated GitLab token lifecycle to align with company audit standards.
-- Built AI tooling for Sygnum engineering: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure plugin); ship AI-driven Jira analytics — #underline[consulted by senior management and asked to host a workshop on applying AI to improve workforce and organisational practices].
+- Use AI to automate managerial overhead and stay technical: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure plugin); ship AI-driven Jira analytics. #underline[Consulted by senior management and asked to host a workshop on applying AI to improve workforce and organisational practices].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security Team.
 - Ad interim Manager for the DevEx Team since Oct 2025 and for our SRE Security Specialist
