@@ -93,6 +93,9 @@ B2B clients across CH, EU, and APAC.
   text(weight: "bold", "OBSERVABILITY"),
   [Datadog, PagerDuty, Snyk, ELK],
 
+  text(weight: "bold", "AI / AGENTIC"),
+  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, local LLMs (Ollama, llama.cpp)],
+
   text(weight: "bold", "PROGRAMMING"),
   [Python, Bash, Terraform (Atlantis)],
 
@@ -109,10 +112,13 @@ B2B clients across CH, EU, and APAC.
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-- Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams (also used as AI knowledge base), redesigned PagerDuty / Slack / incident-communication standards, and shipped AI-driven transparency reports — #underline[invited to present the turnaround as a company-wide success story and workshop].
+#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~70% management / \~30% engineering.]
+
+- Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams, redesigned PagerDuty / Slack / incident-communication standards — #underline[invited to present the turnaround as a company-wide success story and workshop].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
 - Hardened observability and platform-tooling access: rolled out Datadog RBAC + Index Management and automated GitLab token lifecycle to align with company audit standards.
+- Use AI to automate managerial overhead and stay technical: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure plugin); ship AI-driven Jira analytics. #underline[Consulted by senior management and asked to host a workshop on applying AI to improve workforce and organisational practices].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security Team.
 - Ad interim Manager for the DevEx Team since Oct 2025 and for our SRE Security Specialist
@@ -121,6 +127,8 @@ B2B clients across CH, EU, and APAC.
 
 #role("Tech Lead, Site Reliability Engineering", "JAN 2024 – JAN 2025")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
+
+#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~50% engineering / \~50% management.]
 
 - Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
 - Automated FINMA / ISAE audit controls to reduce manual overhead during regulatory audits; restructured Sygnum's AWS Organisation into a hardened Restricted OU isolating sensitive accounts (Authorisation, Management, SMTP, Restricted).
