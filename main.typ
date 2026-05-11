@@ -128,6 +128,8 @@ B2B clients across CH, EU, and APAC.
 #role("Tech Lead, Site Reliability Engineering", "JAN 2024 – JAN 2025")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
+#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~50% engineering / \~50% management.]
+
 - Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
 - Automated FINMA / ISAE audit controls to reduce manual overhead during regulatory audits; restructured Sygnum's AWS Organisation into a hardened Restricted OU isolating sensitive accounts (Authorisation, Management, SMTP, Restricted).
 - Designed Datadog architecture from zero to org standard; #underline[onboarded all our services].
