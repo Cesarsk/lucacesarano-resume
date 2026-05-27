@@ -94,7 +94,7 @@ clients across CH, EU, and APAC.
   [Datadog, PagerDuty, Snyk, ELK],
 
   text(weight: "bold", "AI / AGENTIC"),
-  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference, Hermes / open-weight models)],
+  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Hermes Agent, OpenClaw, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference)],
 
   text(weight: "bold", "PROGRAMMING"),
   [Python, Bash, Terraform (Atlantis)],
