@@ -71,11 +71,11 @@
 #section[Summary] #v(0.2em)
 
 Head of Platform, Site Reliability Engineering at Sygnum, the FINMA-regulated
-digital-asset bank (\$1B+ valuation, \~300 employees). 8+ years across SRE,
-cloud, and on-premise infrastructure. Lead the company-wide SRE function across
-Zürich and Singapore, running the AWS estate that powers Sygnum's trading,
-custody, tokenization, banking, and onboarding workloads for institutional and
-B2B clients across CH, EU, and APAC.
+digital-asset bank (\$1B+ valuation). 8+ years across SRE, cloud, and
+on-premise infrastructure. Lead the company-wide SRE function across Zürich
+and Singapore, running the AWS estate that powers Sygnum's trading, custody,
+tokenization, banking, and onboarding workloads for institutional and B2B
+clients across CH, EU, and APAC.
 
 // =============================================================
 // SKILLS
@@ -94,7 +94,7 @@ B2B clients across CH, EU, and APAC.
   [Datadog, PagerDuty, Snyk, ELK],
 
   text(weight: "bold", "AI / AGENTIC"),
-  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, local LLMs (Ollama, llama.cpp)],
+  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Hermes Agent, OpenClaw, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference)],
 
   text(weight: "bold", "PROGRAMMING"),
   [Python, Bash, Terraform (Atlantis)],
@@ -120,8 +120,7 @@ B2B clients across CH, EU, and APAC.
 - Hardened observability and platform-tooling access: rolled out Datadog RBAC + Index Management and automated GitLab token lifecycle to align with company audit standards.
 - Use AI to automate managerial overhead and stay technical: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure plugin); ship AI-driven Jira analytics. #underline[Consulted by senior management and asked to host a workshop on applying AI to improve workforce and organisational practices].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
-- Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security Team.
-- Ad interim Manager for the DevEx Team since Oct 2025 and for our SRE Security Specialist
+- Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
 #v(0.6em)
 
@@ -141,7 +140,9 @@ B2B clients across CH, EU, and APAC.
 #role("Senior Associate, Site Reliability Engineering", "AUG 2022 – JAN 2024")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-- Contributed to the AWS Landing Zone foundation as an individual contributor: infrastructure code, account-separation patterns, and EKS rollout.
+#text(size: 9pt, style: "italic")[Individual contributor.]
+
+- Contributed to the AWS Landing Zone foundation: infrastructure code, account-separation patterns, and EKS rollout.
 - Designed access-control across Sygnum's stack: OpenSearch RBAC, Kubernetes RBAC, AWS Secrets Manager policies, and AWS IAM Identity Center (SSO) — aligned to least-privilege and audit-ready company standards.
 - Built and maintained containerised microservices on EKS; advanced GitLab CI pipelines.
 
@@ -176,7 +177,7 @@ B2B clients across CH, EU, and APAC.
   #role("Master of Computer Engineering", "SEP 2018 – MAR 2021")
   #company("Alma Mater Studiorum University of Bologna", "Bologna, Italy")
 
-  - Research project at UOC Barcelona (2020-2021): A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems; published in IEEE Access. The outcome is a Pubblication
+  - Research project at UOC Barcelona (2020-2021): A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems; published in IEEE Access.
     - #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — #underline[first author], IEEE Access 2021 (peer-reviewed; #underline[20 citations]).
 
   #v(0.6em)
@@ -205,6 +206,7 @@ B2B clients across CH, EU, and APAC.
 
 #section[Projects, Publications & Writing] #v(0.2em)
 
+- Open-source contributions: #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — published Argo CD Config Management Plugin bridging a missing GitOps capability (Helm `lookup()` under Argo CD); foundation of Sygnum's CMP migration. Also PR to *windisplay* (Windows brightness control via HDMI-CEC).
 - Tech writing on Medium, including articles featured in #underline[#link("https://betterprogramming.pub/")[Better Programming]] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
