@@ -206,6 +206,7 @@ clients across CH, EU, and APAC.
 
 #section[Projects, Publications & Writing] #v(0.2em)
 
+- Open-source contributions: #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — published Argo CD Config Management Plugin bridging a missing GitOps capability (Helm `lookup()` under Argo CD); foundation of Sygnum's CMP migration. Also PR to *windisplay* (Windows brightness control via HDMI-CEC).
 - Tech writing on Medium, including articles featured in #underline[#link("https://betterprogramming.pub/")[Better Programming]] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
