@@ -19,6 +19,9 @@
 
 #set par(leading: 0.45em, justify: false)
 
+// Underline all hyperlinks so they're visually distinguishable in the PDF
+#show link: it => underline(it)
+
 // -------- Section header band (bordered, bold, uppercase) -----
 #let section(name) = block(
   width: 100%,
@@ -207,10 +210,10 @@ clients across CH, EU, and APAC.
 #section[Projects, Publications & Writing] #v(0.2em)
 
 - Open-source contributions:
-  - Merged PR to #underline[#link("https://github.com/aws-samples/assignment-automation-4-aws-sso")[*aws-samples*]] (AWS's official GitHub organisation).
-  - Merged PRs to #link("https://gitlab.com/CalcProgrammer1/OpenRGB")[*CalcProgrammer1/OpenRGB*] (popular cross-platform hardware-RGB control, #underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
-  - Published #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — Argo CD Config Management Plugin bridging a missing GitOps capability (Helm `lookup()` under Argo CD); foundation of Sygnum's CMP migration.
-  - Multiple merged PRs to #link("https://github.com/zpix1/windisplay")[*zpix1/windisplay*] (Windows brightness control via HDMI-CEC).
-- Tech writing on Medium, including articles featured in #underline[#link("https://betterprogramming.pub/")[Better Programming]] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
+  - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
+  - Merged PRs to #link("https://gitlab.com/CalcProgrammer1/OpenRGB")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
+  - Published #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — open-source plugin extending Argo CD (Kubernetes deployment automation used by Adobe, Tesla, Intuit, IBM and others) to support a missing feature; now powers Sygnum's deployment migration.
+  - Multiple merged PRs to #link("https://github.com/zpix1/windisplay")[*zpix1/windisplay*] — open-source Windows brightness control over HDMI.
+- Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
