@@ -212,7 +212,7 @@ clients across CH, EU, and APAC.
 - Open-source contributions:
   - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
   - Merged PRs to #link("https://gitlab.com/CalcProgrammer1/OpenRGB")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
-  - Published #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — open-source plugin extending Argo CD (Kubernetes deployment automation used by Adobe, Tesla, Intuit, IBM and others) to support a missing feature; now powers Sygnum's deployment migration.
+  - Published #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — open-source plugin for Argo CD (CNCF-graduated Kubernetes GitOps tool) adding a missing capability; powers Sygnum's GitOps deployment migration.
   - Multiple merged PRs to #link("https://github.com/zpix1/windisplay")[*zpix1/windisplay*] — open-source Windows brightness control over HDMI.
 - Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
