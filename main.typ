@@ -210,6 +210,7 @@ clients across CH, EU, and APAC.
 #section[Projects, Publications & Writing] #v(0.2em)
 
 - Open-source contributions:
+  - 2 merged PRs to #link("https://github.com/runatlantis/atlantis")[*runatlantis/atlantis*] — Terraform GitOps automation (#underline[9.2k★ / 1.3k forks]), used in production at Sygnum.
   - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
   - Merged PRs to #link("https://gitlab.com/CalcProgrammer1/OpenRGB")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
   - Published #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — open-source plugin for Argo CD (CNCF-graduated Kubernetes GitOps tool) adding a missing capability; powers Sygnum's GitOps deployment migration.
