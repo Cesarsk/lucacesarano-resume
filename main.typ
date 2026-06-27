@@ -74,7 +74,7 @@
 #if show-photo {
   grid(
     columns: (1fr, auto),
-    align: (left + horizon, right + horizon),
+    align: (left + top, right + top),
     column-gutter: 14pt,
     name-block,
     box(clip: true, radius: 3pt, image(photo-path, width: 2.5cm)),
