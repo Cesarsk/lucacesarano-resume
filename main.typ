@@ -71,45 +71,49 @@
   ]
 }
 
+// -------- Skills content (rendered beside the photo when shown) --------
+#let skills-block = {
+  section[Skills]
+  v(0.2em)
+  grid(
+    columns: (auto, 1fr),
+    column-gutter: 1em,
+    row-gutter: 0.45em,
+    text(weight: "bold", "CLOUD & PLATFORM"),
+    [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka, GitLab CI, Docker],
+
+    text(weight: "bold", "OBSERVABILITY"),
+    [Datadog, PagerDuty, Snyk, ELK],
+
+    text(weight: "bold", "AI / AGENTIC"),
+    [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Hermes Agent, OpenClaw, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference)],
+
+    text(weight: "bold", "PROGRAMMING"),
+    [Python, Bash, Terraform (Atlantis)],
+
+    text(weight: "bold", "LANGUAGES"),
+    [Italian (native), English (fluent), German (B1)],
+  )
+}
+
+// Header: with photo, name + skills fill the left column beside a full-size
+// photo (reclaims the dead space); without photo, centered name then skills.
 #if show-photo {
   grid(
     columns: (1fr, auto),
     align: (left + top, right + top),
-    column-gutter: 14pt,
-    name-block,
+    column-gutter: 16pt,
+    {
+      name-block
+      skills-block
+    },
     box(clip: true, radius: 3pt, image(photo-path, width: 2.5cm)),
   )
 } else {
   align(center, name-block)
+  v(0.2em)
+  skills-block
 }
-
-#v(0.2em)
-
-// =============================================================
-// SKILLS
-// =============================================================
-
-#section[Skills] #v(0.2em)
-
-#grid(
-  columns: (auto, 1fr),
-  column-gutter: 1em,
-  row-gutter: 0.45em,
-  text(weight: "bold", "CLOUD & PLATFORM"),
-  [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka, GitLab CI, Docker],
-
-  text(weight: "bold", "OBSERVABILITY"),
-  [Datadog, PagerDuty, Snyk, ELK],
-
-  text(weight: "bold", "AI / AGENTIC"),
-  [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Hermes Agent, OpenClaw, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference)],
-
-  text(weight: "bold", "PROGRAMMING"),
-  [Python, Bash, Terraform (Atlantis)],
-
-  text(weight: "bold", "LANGUAGES"),
-  [Italian (native), English (fluent), German (B1)],
-)
 
 // =============================================================
 // WORK EXPERIENCE
