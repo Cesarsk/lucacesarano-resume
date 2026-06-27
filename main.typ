@@ -54,31 +54,36 @@
 // HEADER
 // =============================================================
 
-#align(center)[
-  #text(weight: "bold", size: 18pt, "LUCA CESARANO")
-  #v(-0.2em)
-  #text(size: 9.5pt)[
+// Photo toggle. Set to true once photo.jpg is committed to the repo.
+// Keep false for US-direct applications (US norms discourage CV photos);
+// true is fine/expected for Swiss + EMEA roles (incl. AWS/Meta/Google EMEA).
+#let show-photo = true
+#let photo-path = "photo.jpg"
+
+#let name-block = {
+  text(weight: "bold", size: 18pt, "LUCA CESARANO")
+  v(-0.2em)
+  text(size: 9.5pt)[
     #link("mailto:luca.cesarano1@gmail.com")[luca.cesarano1\@gmail.com] |
     #link("https://www.lucacesarano.com")[lucacesarano.com] |
     #link("https://github.com/cesarsk")[github.com/cesarsk] |
     #link("https://linkedin.com/in/luca-cesarano1")[linkedin.com/in/luca-cesarano1]
   ]
-]
+}
+
+#if show-photo {
+  grid(
+    columns: (1fr, auto),
+    align: (left + horizon, right + horizon),
+    column-gutter: 14pt,
+    name-block,
+    box(clip: true, radius: 3pt, image(photo-path, width: 2.5cm)),
+  )
+} else {
+  align(center, name-block)
+}
 
 #v(0.2em)
-
-// =============================================================
-// SUMMARY
-// =============================================================
-
-#section[Summary] #v(0.2em)
-
-Head of Platform, Site Reliability Engineering at Sygnum, the FINMA-regulated
-digital-asset bank (\$1B+ valuation). 8+ years across SRE, cloud, and
-on-premise infrastructure. Lead the company-wide SRE function across Zürich
-and Singapore, running the AWS estate that powers Sygnum's trading, custody,
-tokenization, banking, and onboarding workloads for institutional and B2B
-clients across CH, EU, and APAC.
 
 // =============================================================
 // SKILLS
@@ -115,14 +120,14 @@ clients across CH, EU, and APAC.
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~70% management / \~30% engineering.]
+#text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank — trading, custody, tokenization, banking & onboarding for institutional and B2B clients (CH, EU, APAC). Hybrid IC-manager: \~70% management / \~30% engineering.]
 
-- Reset the SRE Platform team's operating model from the ground up: defined the priority framework now adopted by all Sygnum platform teams, redesigned PagerDuty / Slack / incident-communication standards — #underline[invited to present the turnaround as a company-wide success story and workshop].
+- Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
-- Hardened observability and platform-tooling access: rolled out Datadog RBAC + Index Management and automated GitLab token lifecycle to align with company audit standards.
-- Use AI to automate managerial overhead and stay technical: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure plugin); ship AI-driven Jira analytics. #underline[Consulted by senior management and asked to host a workshop on applying AI to improve workforce and organisational practices].
-- Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute, #underline[\~\$300k/yr avoided] versus On-Demand baseline; Instance Scheduler shutting down non-prod off-hours.
+- Hardened observability and platform-tooling access to meet company audit standards: rolled out Datadog RBAC + Index Management and #underline[automated the GitLab token lifecycle, eliminating manual token rotation].
+- Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure) and ship AI-driven Jira analytics — #underline[consulted by senior management and asked to run a company workshop on applying AI to ways of working].
+- Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #underline[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
 #v(0.6em)
@@ -132,7 +137,7 @@ clients across CH, EU, and APAC.
 
 #text(size: 9pt, style: "italic")[Hybrid IC-manager: \~50% engineering / \~50% management.]
 
-- Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 248 across 3 regions] (CH, EU, APAC) during the programme.
+- Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 250+ across 3 regions] (CH, EU, APAC) during the programme.
 - Automated FINMA / ISAE audit controls to reduce manual overhead during regulatory audits; restructured Sygnum's AWS Organisation into a hardened Restricted OU isolating sensitive accounts (Authorisation, Management, SMTP, Restricted).
 - Designed Datadog architecture from zero to org standard; #underline[onboarded all our services].
 - Drove Kong Gateway adoption as the standard Sygnum API gateway.
@@ -199,8 +204,8 @@ clients across CH, EU, and APAC.
   columns: (1fr, auto),
   align: (left, right),
   row-gutter: 0.4em,
-  [AWS Solutions Architect — Professional #text(style: "italic")[(to renew)]], [FEB 2022],
-  [AWS Solutions Architect — Associate #text(style: "italic")[(to renew)]], [NOV 2021],
+  [AWS Solutions Architect — Professional], [FEB 2022],
+  [AWS Solutions Architect — Associate], [NOV 2021],
 )
 
 // =============================================================
@@ -210,11 +215,11 @@ clients across CH, EU, and APAC.
 #section[Projects, Publications & Writing] #v(0.2em)
 
 - Open-source contributions:
-  - 2 merged PRs to #link("https://github.com/runatlantis/atlantis")[*runatlantis/atlantis*] — popular Terraform GitOps automation tool (#underline[9.2k★ / 1.3k forks]).
-  - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
-  - Merged PRs to #link("https://gitlab.com/CalcProgrammer1/OpenRGB")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
-  - Published #link("https://github.com/cesarsk/argocd-helm-lookup")[*argocd-helm-lookup*] — open-source plugin for Argo CD (CNCF-graduated Kubernetes GitOps tool) adding a missing capability; powers Sygnum's GitOps deployment migration.
-  - Multiple merged PRs to #link("https://github.com/zpix1/windisplay")[*zpix1/windisplay*] — open-source Windows brightness control over HDMI.
+  - Multiple PRs merged to #link("https://github.com/runatlantis/atlantis/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*runatlantis/atlantis*] — popular Terraform GitOps automation tool (#underline[9.2k★ / 1.3k forks]).
+  - Merged PR to #link("https://github.com/unslothai/unsloth/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*unslothai/unsloth*] — popular open-source LLM training & inference framework (#underline[67k★ / 6k forks]).
+  - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
+  - Multiple PRs merged to #link("https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
+  - Multiple PRs merged to #link("https://github.com/zpix1/windisplay/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*zpix1/windisplay*] — open-source Windows brightness control over HDMI.
 - Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
