@@ -86,20 +86,6 @@
 #v(0.2em)
 
 // =============================================================
-// SUMMARY
-// =============================================================
-
-#section[Summary] #v(0.2em)
-
-Platform SRE leader, 8+ years across cloud and on-premise infrastructure.
-Lead the company-wide SRE function across Zürich and Singapore, running the
-AWS estate behind Sygnum — the \$1B+ FINMA-regulated digital-asset bank —
-250+ accounts across 3 regions (CH, EU, APAC) powering trading, custody,
-tokenization, banking, and onboarding for institutional and B2B clients.
-Built the org's reliability practice — SLO/SLA framework and incident
-standards — from the ground up.
-
-// =============================================================
 // SKILLS
 // =============================================================
 
@@ -134,7 +120,7 @@ standards — from the ground up.
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-#text(size: 9pt, style: "italic")[Hybrid IC-manager: \~70% management / \~30% engineering.]
+#text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank — trading, custody, tokenization, banking & onboarding for institutional and B2B clients (CH, EU, APAC). Hybrid IC-manager: \~70% management / \~30% engineering.]
 
 - Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
