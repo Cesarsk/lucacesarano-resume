@@ -124,7 +124,7 @@
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-#text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank — trading, custody, tokenization, banking & onboarding for institutional and B2B clients (CH, EU, APAC). Hybrid IC-manager: \~70% management / \~30% engineering.]
+#text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank. #linebreak() Hybrid IC-manager: \~50% engineering / \~50% management.]
 
 - Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
@@ -165,7 +165,6 @@
 
 - Refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
 - Contributed to the design and build of the client's AWS Landing Zone.
-- AWS Cloud Migration for Banca Agricola Popolare di Ragusa (CloudEndure, EC2, RDS, IAM, Workspaces).
 - Built ELK monitoring/logging platform with quality dashboards.
 
 #v(0.6em)
@@ -220,6 +219,7 @@
 
 - Open-source contributions:
   - Multiple PRs merged to #link("https://github.com/runatlantis/atlantis/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*runatlantis/atlantis*] — popular Terraform GitOps automation tool (#underline[9.2k★ / 1.3k forks]).
+  - Merged PR to #link("https://gitlab.com/gitlab-org/terraform-provider-gitlab/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano")[*gitlab-org/terraform-provider-gitlab*] — the official GitLab Terraform provider.
   - Merged PR to #link("https://github.com/unslothai/unsloth/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*unslothai/unsloth*] — popular open-source LLM training & inference framework (#underline[67k★ / 6k forks]).
   - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
   - Multiple PRs merged to #link("https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
