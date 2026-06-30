@@ -124,7 +124,7 @@
 #role("Head of Platform, Site Reliability Engineering", "JAN 2025 – PRESENT")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-#text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank — trading, custody, tokenization, banking & onboarding for institutional and B2B clients (CH, EU, APAC). Hybrid IC-manager: \~70% management / \~30% engineering.]
+#text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank. #linebreak() Hybrid IC-manager: \~50% engineering / \~50% management.]
 
 - Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
@@ -165,7 +165,6 @@
 
 - Refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
 - Contributed to the design and build of the client's AWS Landing Zone.
-- AWS Cloud Migration for Banca Agricola Popolare di Ragusa (CloudEndure, EC2, RDS, IAM, Workspaces).
 - Built ELK monitoring/logging platform with quality dashboards.
 
 #v(0.6em)
