@@ -129,8 +129,9 @@
 - Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
-- Hardened observability and platform-tooling access to meet company audit standards: rolled out Datadog RBAC + Index Management and #underline[automated the GitLab token lifecycle, eliminating manual token rotation].
-- Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure) and ship AI-driven Jira analytics — #underline[consulted by senior management and asked to run a company workshop on applying AI to ways of working].
+- Hardened platform security to meet company audit standards: rolled out Datadog RBAC + Index Management, introduced #underline[Snyk vulnerability management with a CISO-approved SLA standard], and automated the GitLab token lifecycle — #underline[120+ access tokens rotated monthly as code, eliminating manual rotation].
+- Led company-wide incident response — #underline[same-evening patching of a critical (9.8 CVSS) Kong CVE across all gateways]; hands-on restoration of a company-wide Kafka credential outage.
+- Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure), #underline[manage Jira agentically] (AI-driven analytics and worklog automation), and #underline[halved PI-planning prep time] with an agentic planning skill adopted by both SRE teams. #underline[Consulted by leadership and asked to run a company workshop on applying AI to ways of working].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #underline[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
@@ -142,10 +143,10 @@
 #text(size: 9pt, style: "italic")[Hybrid IC-manager: \~50% engineering / \~50% management.]
 
 - Led Sygnum's AWS Landing Zone redesign in partnership with #underline[AWS ProServe (on-site engagement at AWS offices)]: designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #underline[AWS estate scaled from 4 accounts (single-region) to 250+ across 3 regions] (CH, EU, APAC) during the programme.
-- Automated FINMA / ISAE audit controls to reduce manual overhead during regulatory audits; restructured Sygnum's AWS Organisation into a hardened Restricted OU isolating sensitive accounts (Authorisation, Management, SMTP, Restricted).
-- Designed Datadog architecture from zero to org standard; #underline[onboarded all our services].
-- Drove Kong Gateway adoption as the standard Sygnum API gateway.
-- Led delivery of EKS Updater (eliminated weeks of manual cluster-upgrade toil twice a year) and ArgoCD-managed application updates across all domains.
+- Automated the security controls underpinning Sygnum's regulatory (FINMA / ISAE) audits — #underline[\~30 AWS Config rules and 4 compliance benchmarks (AWS FSBP, CIS, NIST 800-53) across 7 org-wide security services, enforced by 12 SCPs]; hardened the AWS Organisation with a dedicated Restricted OU isolating its most sensitive accounts.
+- Designed Datadog architecture from zero to org standard — #underline[now monitoring 100+ production services].
+- Drove Kong Gateway adoption as the Sygnum-standard API gateway — #underline[now running 40 data planes across 8 business domains and 4 environments] (Konnect hybrid, delivered via ArgoCD GitOps).
+- Led delivery of EKS Updater (#underline[eliminated weeks of manual upgrade toil twice a year across \~65 EKS clusters]) and ArgoCD-managed application updates across all domains.
 
 #v(0.6em)
 
@@ -156,7 +157,7 @@
 
 - Contributed to the AWS Landing Zone foundation: infrastructure code, account-separation patterns, and EKS rollout.
 - Designed access-control across Sygnum's stack: OpenSearch RBAC, Kubernetes RBAC, AWS Secrets Manager policies, and AWS IAM Identity Center (SSO) — aligned to least-privilege and audit-ready company standards.
-- Built and maintained containerised microservices on EKS; advanced GitLab CI pipelines.
+- Built and maintained containerised microservices on EKS and their GitLab CI pipelines.
 
 #v(0.6em)
 
@@ -165,7 +166,7 @@
 
 - Refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
 - Contributed to the design and build of the client's AWS Landing Zone.
-- Built ELK monitoring/logging platform with quality dashboards.
+- Built the client's ELK monitoring/logging platform and operational dashboards.
 
 #v(0.6em)
 
