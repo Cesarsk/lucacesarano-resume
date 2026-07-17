@@ -130,7 +130,7 @@
 - External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
 - Hardened observability and platform-tooling access to meet company audit standards: rolled out Datadog RBAC + Index Management and #underline[automated the GitLab token lifecycle, eliminating manual token rotation].
-- Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure) and ship AI-driven Jira analytics — #underline[consulted by senior management and asked to run a company workshop on applying AI to ways of working].
+- Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure) and #underline[manage Jira agentically] (AI-driven analytics and worklog automation). #underline[Consulted by senior management and asked to run a company workshop on applying AI to ways of working].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #underline[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
