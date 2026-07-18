@@ -80,16 +80,16 @@
     column-gutter: 1em,
     row-gutter: 0.45em,
     text(weight: "bold", "CLOUD & PLATFORM"),
-    [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka, GitLab CI, Docker],
+    [AWS — 250+ account estate: Landing Zone & Organizations, networking, IAM & identity, security (SCPs, KMS), EKS. Kubernetes, Helm, ArgoCD, Istio, Kong, GitLab CI, Docker],
 
-    text(weight: "bold", "OBSERVABILITY"),
-    [Datadog, PagerDuty, Snyk, ELK],
+    text(weight: "bold", "OBSERVABILITY & SECURITY"),
+    [Datadog, PagerDuty, Snyk],
 
     text(weight: "bold", "AI / AGENTIC"),
-    [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Hermes Agent, OpenClaw, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference)],
+    [Claude Code (skills, hooks, plugins, marketplaces), AWS Bedrock + AgentCore; multi-agent workflows, agent memory systems, RAG & knowledge bases, MCP integrations],
 
-    text(weight: "bold", "PROGRAMMING"),
-    [Python, Bash, Terraform (Atlantis)],
+    text(weight: "bold", "AUTOMATION & IAC"),
+    [Python, Bash, Terraform, Atlantis],
 
     text(weight: "bold", "LANGUAGES"),
     [Italian (native), English (fluent), German (B1)],
@@ -225,6 +225,7 @@
   - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
   - Multiple PRs merged to #link("https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
   - Multiple PRs merged to #link("https://github.com/zpix1/windisplay/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*zpix1/windisplay*] — open-source Windows brightness control over HDMI.
+- Built #link("https://github.com/Cesarsk/ike")[*ike*] — open-source k9s-style terminal UI for Datadog, released on Homebrew; #underline[developed end-to-end by directing agentic AI workflows] (Go).
 - Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
