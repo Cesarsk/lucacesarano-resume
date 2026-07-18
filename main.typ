@@ -80,16 +80,16 @@
     column-gutter: 1em,
     row-gutter: 0.45em,
     text(weight: "bold", "CLOUD & PLATFORM"),
-    [AWS (Landing Zone, Organizations, EKS, MSK, RDS, Lambda, S3, IAM, Direct Connect, KMS, CloudWatch, Cost Explorer, Route53), Kubernetes, Helm, ArgoCD, ISTIO, Kong, Confluent Kafka, GitLab CI, Docker],
+    [AWS — 250+ account estate: Landing Zone & Organizations, networking, IAM & identity, security (SCPs, KMS), EKS. Kubernetes, Helm, ArgoCD, Istio, Kong, GitLab CI, Docker],
 
-    text(weight: "bold", "OBSERVABILITY"),
-    [Datadog, PagerDuty, Snyk, ELK],
+    text(weight: "bold", "OBSERVABILITY & SECURITY"),
+    [Datadog, PagerDuty, Snyk],
 
     text(weight: "bold", "AI / AGENTIC"),
-    [Claude Code (agents, skills, hooks, plugins, marketplaces), OpenCode, Hermes Agent, OpenClaw, AWS Bedrock + AgentCore; familiar with local LLMs (llama.cpp inference)],
+    [Claude Code (skills, hooks, plugins, marketplaces), AWS Bedrock + AgentCore; multi-agent workflows, agent memory systems, RAG & knowledge bases, MCP integrations],
 
-    text(weight: "bold", "PROGRAMMING"),
-    [Python, Bash, Terraform (Atlantis)],
+    text(weight: "bold", "AUTOMATION & IAC"),
+    [Python, Bash, Terraform, Atlantis],
 
     text(weight: "bold", "LANGUAGES"),
     [Italian (native), English (fluent), German (B1)],
@@ -126,12 +126,12 @@
 
 #text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank. #linebreak() Hybrid IC-manager: \~50% engineering / \~50% management.]
 
-- Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
-- External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
+- Reset the SRE Platform team's operating model from the ground up (priority framework #underline[now adopted by all Sygnum platform teams], redesigned PagerDuty / Slack / incident-communication standards) — external-team request backlog cut from #underline[40+ to \<10] with #underline[two consecutive PIs at 100% objective completion]; #underline[invited to present the turnaround company-wide].
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
 - Hardened platform security to meet company audit standards: rolled out Datadog RBAC + Index Management, introduced #underline[Snyk vulnerability management with a CISO-approved SLA standard], and automated the GitLab token lifecycle — #underline[120+ access tokens rotated monthly as code, eliminating manual rotation].
 - Led company-wide incident response — #underline[same-evening patching of a critical (9.8 CVSS) Kong CVE across all gateways]; hands-on restoration of a company-wide Kafka credential outage.
 - Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure), #underline[manage Jira agentically] (AI-driven analytics and worklog automation), and #underline[halved PI-planning prep time] with an agentic planning skill adopted by both SRE teams. #underline[Consulted by leadership and asked to run a company workshop on applying AI to ways of working].
+- Leading the platform build of Sygnum's AI Landing Zone from scratch — #underline[governed Amazon Bedrock across 4 dedicated AI accounts] for a regulated bank (EU-only inference, PrivateLink-isolated, SCP-enforced, org-wide guardrails & invocation logging), #underline[first RAG knowledge base live].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #underline[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
@@ -225,6 +225,7 @@
   - Merged PR to #link("https://github.com/aws-samples/assignment-automation-4-aws-sso/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*aws-samples*] — AWS's official samples organisation, used globally for AWS reference implementations.
   - Multiple PRs merged to #link("https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano")[*CalcProgrammer1/OpenRGB*] — popular cross-platform hardware-RGB control tool (#underline[3k★ / 1.7k forks]). My personal project #link("https://github.com/Cesarsk/kraken-unleashed")[*kraken-unleashed*] is listed in OpenRGB's README under "Related Projects".
   - Multiple PRs merged to #link("https://github.com/zpix1/windisplay/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged")[*zpix1/windisplay*] — open-source Windows brightness control over HDMI.
+- Built #link("https://github.com/Cesarsk/ike")[*ike*] — open-source k9s-style terminal UI for Datadog, released on Homebrew; #underline[developed end-to-end by directing agentic AI workflows] (Go).
 - Tech writing on Medium, including articles featured in #link("https://betterprogramming.pub/")[Better Programming] (#link("https://lucacesarano.medium.com")[lucacesarano.medium.com]).
 - Open-source Android language app (*Say It! Pronunciation App*, no longer on Store) — #underline[30,000 downloads, 4.9/5] (320 reviews).
 - Occasional advisory work for early-stage startups on cloud architecture and platform setup.
