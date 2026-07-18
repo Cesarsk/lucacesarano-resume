@@ -126,12 +126,12 @@
 
 #text(size: 9pt, style: "italic")[\$1B+ FINMA-regulated digital-asset bank. #linebreak() Hybrid IC-manager: \~50% engineering / \~50% management.]
 
-- Reset the SRE Platform team's operating model from the ground up — priority framework #underline[now adopted by all Sygnum platform teams] and redesigned PagerDuty / Slack / incident-communication standards; #underline[invited to present the turnaround company-wide].
-- External-team request backlog cut from #underline[40+ to \<10]. #underline[Two consecutive PIs at 100% objective completion] across Platform SRE, DevEx, and Security.
+- Reset the SRE Platform team's operating model from the ground up (priority framework #underline[now adopted by all Sygnum platform teams], redesigned PagerDuty / Slack / incident-communication standards) — external-team request backlog cut from #underline[40+ to \<10] with #underline[two consecutive PIs at 100% objective completion]; #underline[invited to present the turnaround company-wide].
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #underline[3 services LIVE, 10+ in pipeline].
 - Hardened platform security to meet company audit standards: rolled out Datadog RBAC + Index Management, introduced #underline[Snyk vulnerability management with a CISO-approved SLA standard], and automated the GitLab token lifecycle — #underline[120+ access tokens rotated monthly as code, eliminating manual rotation].
 - Led company-wide incident response — #underline[same-evening patching of a critical (9.8 CVSS) Kong CVE across all gateways]; hands-on restoration of a company-wide Kafka credential outage.
 - Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure), #underline[manage Jira agentically] (AI-driven analytics and worklog automation), and #underline[halved PI-planning prep time] with an agentic planning skill adopted by both SRE teams. #underline[Consulted by leadership and asked to run a company workshop on applying AI to ways of working].
+- Leading the platform build of Sygnum's AI Landing Zone from scratch — #underline[governed Amazon Bedrock across 4 dedicated AI accounts] for a regulated bank (EU-only inference, PrivateLink-isolated, SCP-enforced, org-wide guardrails & invocation logging), #underline[first RAG knowledge base live].
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #underline[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
