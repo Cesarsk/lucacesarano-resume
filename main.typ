@@ -88,16 +88,16 @@
     column-gutter: 1em,
     row-gutter: 0.55em,
     text(weight: "bold", "CLOUD & PLATFORM"),
-    [AWS — 250+ account estate: Landing Zone & Organizations, networking, IAM & identity, security (SCPs, KMS), EKS, Kubernetes, Helm, ArgoCD, Istio, Kong, GitLab CI, Docker],
+    [AWS — 250+ account estate: Landing Zone & Organizations, networking, IAM & identity, security (SCPs, KMS), EKS, Kubernetes, Helm, ArgoCD, Istio, Kong, GitLab CI/CD, Docker],
 
     text(weight: "bold", "OBSERVABILITY & SECURITY"),
     [Datadog, PagerDuty, Snyk],
 
     text(weight: "bold", "AI / AGENTIC"),
-    [Claude Code (skills, hooks, plugins, marketplaces), AWS Bedrock + AgentCore; multi-agent workflows, agent memory systems, RAG & knowledge bases, MCP],
+    [Generative & agentic AI — Claude Code (skills, hooks, plugins, marketplaces), AWS Bedrock + AgentCore; multi-agent workflows, agent memory systems, RAG & knowledge bases, MCP],
 
-    text(weight: "bold", "AUTOMATION & IAC"),
-    [Python, Bash, Terraform, Atlantis],
+    text(weight: "bold", "DEVOPS & IAC"),
+    [Infrastructure as Code: Terraform, Atlantis; Python, Bash, Linux],
 
     text(weight: "bold", "LANGUAGES"),
     [Italian (native), English (fluent), German (B1)],
@@ -134,10 +134,10 @@
 
 #text(size: 9pt, style: "italic", fill: luma(95))[\$1B+ FINMA-regulated digital-asset bank. #linebreak() Hybrid IC-manager: \~50% engineering / \~50% management.]
 
-- Reset the SRE Platform team's operating model from the ground up (priority framework now adopted by all Sygnum platform teams, redesigned PagerDuty / Slack / incident-communication standards) — external-team request backlog cut from #strong[40+ to \<10] with #strong[two consecutive PIs at 100% objective completion]; invited to present the turnaround company-wide.
+- Reset the SRE Platform team's operating model from the ground up (priority framework now adopted by all Sygnum platform teams, redesigned PagerDuty on-call / Slack / incident-communication standards) — external-team request backlog cut from #strong[40+ to \<10] with #strong[two consecutive PIs at 100% objective completion;] invited to present the turnaround company-wide.
 - Authored Sygnum's first SLO/SLA + reliability/alerting framework on Datadog with multi-window burn-rate alerts (approved 2025); #strong[3 services LIVE, 10+ in pipeline].
 - Hardened platform security to meet company audit standards: rolled out Datadog RBAC + Index Management, introduced Snyk vulnerability management with a CISO-approved SLA standard, and automated the GitLab token lifecycle — #strong[120+ access tokens rotated monthly as code, eliminating manual rotation].
-- Led company-wide incident response — #strong[same-evening patching of a critical (9.8 CVSS) Kong CVE across all gateways]; hands-on restoration of a company-wide Kafka credential outage.
+- Led company-wide incident response — #strong[same-evening patching of a critical (9.8 CVSS) Kong CVE across all gateways;] hands-on restoration of a company-wide Kafka credential outage.
 - Use AI to cut managerial overhead and stay hands-on: authored skills in Sygnum's internal Claude Code plugin marketplace (SRE triage, slide automation, infrastructure), #strong[manage Jira agentically] (AI-driven analytics and worklog automation), and #strong[halved PI-planning prep time] with an agentic planning skill adopted by both SRE teams. Consulted by leadership and asked to run a company workshop on applying AI to ways of working.
 - Leading the platform build of Sygnum's AI Landing Zone from scratch — #strong[governed Amazon Bedrock across 4 dedicated AI accounts] for a regulated bank (EU-only inference, PrivateLink-isolated, SCP-enforced, org-wide guardrails & invocation logging), #strong[first RAG knowledge base live].
 - Drive cost-optimisation programme: #strong[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #strong[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
@@ -151,7 +151,7 @@
 #text(size: 9pt, style: "italic", fill: luma(95))[Hybrid IC-manager: \~50% engineering / \~50% management.]
 
 - Led Sygnum's AWS Landing Zone redesign in partnership with AWS ProServe (on-site engagement at AWS offices): designed the Sygnum-side infrastructure code, domain/workload account separation, IAM model, and EKS rollout. #strong[AWS estate scaled from 4 accounts (single-region) to 250+ across 3 regions] (CH, EU, APAC) during the programme.
-- Automated the security controls underpinning Sygnum's regulatory (FINMA / ISAE) audits — #strong[\~30 AWS Config rules and 4 compliance benchmarks (AWS FSBP, CIS, NIST 800-53) across 7 org-wide security services, enforced by 12 SCPs]; hardened the AWS Organisation with a dedicated Restricted OU isolating its most sensitive accounts.
+- Automated the security controls underpinning Sygnum's regulatory (FINMA / ISAE) audits — #strong[\~30 AWS Config rules and 4 compliance benchmarks (AWS FSBP, CIS, NIST 800-53) across 7 org-wide security services, enforced by 12 SCPs;] hardened the AWS Organisation with a dedicated Restricted OU isolating its most sensitive accounts.
 - Designed Datadog architecture from zero to org standard — #strong[now monitoring 100+ production services].
 - Drove Kong Gateway adoption as the Sygnum-standard API gateway — #strong[now running 40 data planes across 8 business domains and 4 environments] (Konnect hybrid, delivered via ArgoCD GitOps).
 - Led delivery of EKS Updater (#strong[eliminated weeks of manual upgrade toil twice a year across \~65 EKS clusters]) and ArgoCD-managed application updates across all domains.
