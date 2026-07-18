@@ -8,7 +8,7 @@
 
 #set page(
   paper: "a4",
-  margin: (x: 1.2cm, y: 0.8cm),
+  margin: (x: 1.2cm, y: 1.0cm),
 )
 
 #set text(
@@ -17,18 +17,22 @@
   hyphenate: false,
 )
 
-#set par(leading: 0.45em, justify: false)
+#set par(leading: 0.58em, justify: false)
 
 // Underline all hyperlinks so they're visually distinguishable in the PDF
 #show link: it => underline(it)
+
+// Delicate underlines: thin, slightly grey, dropped below the descenders
+// so the line stops visually colliding with the text it underlines.
+#set underline(stroke: 0.5pt + luma(120), offset: 1.6pt)
 
 // -------- Section header band (bordered, bold, uppercase) -----
 #let section(name) = block(
   width: 100%,
   inset: (x: 6pt, y: 3.5pt),
   stroke: 0.7pt + black,
-  above: 11pt,
-  below: 6pt,
+  above: 14pt,
+  below: 7pt,
   text(weight: "bold", size: 10pt, upper(name)),
 )
 
@@ -48,7 +52,7 @@
 ))
 
 // -------- Bullets with tighter spacing --------
-#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.4em, marker: ([▪], [○]))
+#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.55em, marker: ([▪], [○]))
 
 // =============================================================
 // HEADER
@@ -69,6 +73,8 @@
     #link("https://github.com/cesarsk")[github.com/cesarsk] |
     #link("https://linkedin.com/in/luca-cesarano1")[linkedin.com/in/luca-cesarano1]
   ]
+  v(0.15em)
+  text(size: 9pt, style: "italic")[Italian citizen · Swiss B permit · Zürich]
 }
 
 // -------- Skills content (rendered beside the photo when shown) --------
@@ -78,15 +84,15 @@
   grid(
     columns: (auto, 1fr),
     column-gutter: 1em,
-    row-gutter: 0.45em,
+    row-gutter: 0.55em,
     text(weight: "bold", "CLOUD & PLATFORM"),
-    [AWS — 250+ account estate: Landing Zone & Organizations, networking, IAM & identity, security (SCPs, KMS), EKS. Kubernetes, Helm, ArgoCD, Istio, Kong, GitLab CI, Docker],
+    [AWS — 250+ account estate: Landing Zone & Organizations, networking, IAM & identity, security (SCPs, KMS), EKS, Kubernetes, Helm, ArgoCD, Istio, Kong, GitLab CI, Docker],
 
     text(weight: "bold", "OBSERVABILITY & SECURITY"),
     [Datadog, PagerDuty, Snyk],
 
     text(weight: "bold", "AI / AGENTIC"),
-    [Claude Code (skills, hooks, plugins, marketplaces), AWS Bedrock + AgentCore; multi-agent workflows, agent memory systems, RAG & knowledge bases, MCP integrations],
+    [Claude Code (skills, hooks, plugins, marketplaces), AWS Bedrock + AgentCore; multi-agent workflows, agent memory systems, RAG & knowledge bases, MCP],
 
     text(weight: "bold", "AUTOMATION & IAC"),
     [Python, Bash, Terraform, Atlantis],
@@ -135,7 +141,7 @@
 - Drive cost-optimisation programme: #underline[\~43% Spot adoption sustained] on EC2 compute plus Instance Scheduler shutting down non-prod off-hours — #underline[\~30% reduction in EC2 compute cost] versus the On-Demand baseline.
 - Lead engineers across Zürich and Singapore; closed #underline[5 hires] across SRE, DevEx and IT Security; ad interim Manager for the DevEx Team since Oct 2025 and for the SRE Security Specialist role.
 
-#v(0.6em)
+#v(0.85em)
 
 #role("Tech Lead, Site Reliability Engineering", "JAN 2024 – JAN 2025")
 #company("Sygnum Bank AG", "Zürich, Switzerland")
@@ -148,27 +154,31 @@
 - Drove Kong Gateway adoption as the Sygnum-standard API gateway — #underline[now running 40 data planes across 8 business domains and 4 environments] (Konnect hybrid, delivered via ArgoCD GitOps).
 - Led delivery of EKS Updater (#underline[eliminated weeks of manual upgrade toil twice a year across \~65 EKS clusters]) and ArgoCD-managed application updates across all domains.
 
-#v(0.6em)
+#v(0.85em)
 
-#role("Senior Associate, Site Reliability Engineering", "AUG 2022 – JAN 2024")
-#company("Sygnum Bank AG", "Zürich, Switzerland")
+#block(breakable: false)[
+  #role("Senior Associate, Site Reliability Engineering", "AUG 2022 – JAN 2024")
+  #company("Sygnum Bank AG", "Zürich, Switzerland")
 
-#text(size: 9pt, style: "italic")[Individual contributor.]
+  #text(size: 9pt, style: "italic")[Individual contributor.]
 
-- Contributed to the AWS Landing Zone foundation: infrastructure code, account-separation patterns, and EKS rollout.
-- Designed access-control across Sygnum's stack: OpenSearch RBAC, Kubernetes RBAC, AWS Secrets Manager policies, and AWS IAM Identity Center (SSO) — aligned to least-privilege and audit-ready company standards.
-- Built and maintained containerised microservices on EKS and their GitLab CI pipelines.
+  - Contributed to the AWS Landing Zone foundation: infrastructure code, account-separation patterns, and EKS rollout.
+  - Designed access-control across Sygnum's stack: OpenSearch RBAC, Kubernetes RBAC, AWS Secrets Manager policies, and AWS IAM Identity Center (SSO) — aligned to least-privilege and audit-ready company standards.
+  - Built and maintained containerised microservices on EKS and their GitLab CI pipelines.
+]
 
-#v(0.6em)
+#v(0.85em)
 
-#role("Site Reliability Engineer", "FEB 2021 – JUL 2022")
-#company("Reply Group (Storm Reply) · Full-time consultant at Generali Investments", "Turin, Italy")
+#block(breakable: false)[
+  #role("Site Reliability Engineer", "FEB 2021 – JUL 2022")
+  #company("Reply Group (Storm Reply) · Full-time consultant at Generali Investments", "Turin, Italy")
 
-- Refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
-- Contributed to the design and build of the client's AWS Landing Zone.
-- Built the client's ELK monitoring/logging platform and operational dashboards.
+  - Refactored pipelines and Terraform infrastructure (#underline[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
+  - Contributed to the design and build of the client's AWS Landing Zone.
+  - Built the client's ELK monitoring/logging platform and operational dashboards.
+]
 
-#v(0.6em)
+#v(0.85em)
 
 #block(breakable: false)[
   #role("Freelance System Engineer", "NOV 2017 – FEB 2021")
@@ -192,7 +202,7 @@
   - Research project at UOC Barcelona (2020-2021): A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems; published in IEEE Access.
     - #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — #underline[first author], IEEE Access 2021 (peer-reviewed; #underline[20 citations]).
 
-  #v(0.6em)
+  #v(0.85em)
 
   #role("Bachelor of Computer Engineering", "OCT 2012 – JUL 2018")
   #company("Federico II University of Naples", "Naples, Italy")
