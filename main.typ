@@ -175,6 +175,8 @@
   #role("Site Reliability Engineer", "FEB 2021 – JUL 2022")
   #company("Reply Group (Storm Reply) · Full-time consultant at Generali Investments", "Turin, Italy")
 
+  #text(size: 9pt, style: "italic", fill: luma(95))[Individual contributor.]
+
   - Refactored pipelines and Terraform infrastructure (#strong[4× pipeline efficiency, 2× app performance, 30% toil reduction] via auto-remediation CLI).
   - Contributed to the design and build of the client's AWS Landing Zone.
   - Built the client's ELK monitoring/logging platform and operational dashboards.
@@ -186,8 +188,10 @@
   #role("Freelance System Engineer", "NOV 2017 – FEB 2021")
   #company("Drone Inspection Service", "Naples, Italy")
 
-  - Sole technical contact for IT during the company's early-stage growth.
-  - Built and ran the full on-premise stack: networking, servers and workstations, OS, directory services, databases, and remote/on-site connectivity.
+  #text(size: 9pt, style: "italic", fill: luma(95))[Occasional paid engagement alongside university studies.]
+
+  - Provided IT and systems support as the company's primary technical contact.
+  - Configured and maintained its on-premise stack: networking, servers and workstations, OS, directory services, databases, and remote/on-site connectivity.
   - Advised on infrastructure decisions and hardware procurement.
 ]
 
@@ -200,6 +204,7 @@
 
   #role("Master of Computer Engineering", "SEP 2018 – MAR 2021")
   #company("Alma Mater Studiorum University of Bologna", "Bologna, Italy")
+  #v(0.35em)
 
   - Research project at UOC Barcelona (2020-2021): A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems; published in IEEE Access.
     - #link("https://ieeexplore.ieee.org/document/9624984")[*"A Real-Time Energy-Saving Mechanism in Internet of Vehicles Systems"*] — #strong[first author], IEEE Access 2021 (peer-reviewed; #strong[20 citations]).
